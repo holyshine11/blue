@@ -1,0 +1,82 @@
+/* capacityAnalysisDetail.css */
+@charset "UTF-8";
+.btnBox {
+    padding: 0 0 20px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+#bord .bordRight .tableWrap table .trBottom .thHeight.checking {
+    color: #179AFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#bord #evaDetail .evaInfo .tableWrap #evaInfoTb .description {
+    color: #686868;
+}
+#bord #evaInfoTb {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+#bord .bordRight .tableWrap table .trHead .trBottom {
+    border-bottom: 1px solid #ccc;
+}
+#bord .bordRight .tableWrap table .trHead .trBottom:last-child {
+    border: none;
+}
+
+/* addBtnPopUp */
+.leaderCommentPopUp {
+    padding: 40px;
+}
+.leaderCommentPopUp h3 {
+    font-size: 20px;
+    padding: 0 0 35px;
+}
+#leaderCommentPopUpTb {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+#leaderCommentPopUpTb .trBottom {
+    text-align: center;            
+    border-bottom: 1px solid #ccc;
+} 
+#leaderCommentPopUpTb thead .trBottom {
+    border-bottom: 1px solid #222;
+} 
+#leaderCommentPopUpTb tbody .trBottom:last-child {
+    border: none;
+}
+#leaderCommentPopUpTb .trBottom .thHeight {
+    padding: 15px 0;
+    border-right: 1px solid #ccc;
+}
+#leaderCommentPopUpTb .trBottom .thHeight strong {
+    color: #222;
+    font-weight: 500;
+}
+#bord .bordRight .tableWrap table .trBottom .thHeight.border {
+    background-color: rgb(248, 248, 215);
+    font-weight: 500;
+}
+#leaderCommentPopUpTb .trBottom .thHeight:last-child {
+    border-right: none;
+}
+#leaderCommentPopUpTb .trBottom .thHeight.description {
+    height: 230px;
+    padding: 15px;
+    color: #686868;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+#leaderCommentPopUpTb .trBottom .thHeight.question {   
+    padding: 15px;
+    color: #686868;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+.leaderCommentPopUp .btnBox {
+    padding: 25px 0 0;
+}

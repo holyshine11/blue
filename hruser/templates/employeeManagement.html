@@ -1,0 +1,183 @@
+<!-- employeeManagement.html (사원관리) -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HR SOLUTION | 사원 관리</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta name="apple-mobile-web-app-capable" content="yes" /-->
+  <meta name="copyright" content="(주)블루웨이브컨설팅" />
+  <meta name="reply-to" content="aziulsanko@bluewave.co.kr" />
+  <meta name="Description" content="HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION" />
+  <meta name="Keywords" content="인사평가, 인사평가솔루션, HR, HR SOLUTION" />
+
+  <!--favicon -->
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="">
+  <link rel="icon" sizes="16x16 32x32" href="">
+
+  <link rel="stylesheet" href="static/css/reset.css">
+  <link rel="stylesheet" href="static/css/common.css">
+  <link rel="stylesheet" href="static/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="static/css/employeeManagement.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="static/js/jquery.dataTables.min.js" defer></script>
+  <script src="static/js/common.js" defer></script>
+  <script src="static/js/employeeManagement.js" defer></script>
+</head>
+
+<body>
+
+  <!-- header -->
+  <!-- header -->
+  <div id="header">
+    <header>   
+        <div class="frame">
+            <div class="logo">
+                <a href="index.html"><img src="static/img/logo.png" alt="logo이미지"></a>
+            </div>
+                    
+            <nav class="menuWrap">
+                <ul class="menu">
+                    <li><a href="myInfo.html">내 정보</a>
+                        <nav>
+                            <a href="myInfo.html">기본 정보</a>
+                        </nav>
+                    </li>   
+                    <li><a href="capacityEva.html">역량 평가</a>
+                        <nav>
+                            <a href="capacityRes.html">역량 평가 결과(A)</a>
+                            <a href="capacityDes.html">역량 평가 설계(A)</a>
+                            <a href="capacityAnalysis.html">역량 평가 분석(A)</a>
+                        </nav>
+                    </li>                    
+                    <li><a href="employeeManagement.html">사원 관리</a>
+                        <nav>
+                            <a href="employeeManagement.html">사원 관리</a>
+                        </nav>
+                    </li>
+                    <li><a href="commonCode.html">시스템 관리</a>
+                        <nav>
+                            <a href="commonCode.html">시스템 관리</a>
+                        </nav>
+                    </li>
+                </ul>                    
+            </nav>    
+    
+            <div class="menuRight">
+                <a href="#" id="logIn">Log in</a>
+            </div>                   
+        </div>              
+    </header>
+</div>
+
+  <div class="bordContainer frame">
+    <div id="bord">
+      <!-- bord left -->
+      <aside class="bordLeft">
+        <p>사원 관리</p>
+        <div class="employee MenuDepth"><a href="#"> - 사원 관리</a></div>
+      </aside>
+
+      <!-- bord right -->
+      <section class="bordRight">
+        <!-- 사원 조회 -->
+        <article class="titleTop">
+          <h2>사원 관리</h2>
+          <div class="title">
+            <p><span class="headMark"></span> 사원 조회</p>
+            <div class="btnBox">
+              <button type="button" class="btn EmployeeBtn">사원 등록</button>
+            </div>
+          </div>
+        </article>
+
+        <article id="employeeInquiry">
+          <div class="tableWrap">
+            <table title="employeeInquiry" id="employeeInquiryList" class="hover row-border stripe" border="1" width="100%">
+              <colgroup>
+                <col width="20%">
+                <col width="80%">
+              </colgroup>
+              <tbody>
+                <form action="#" method="post"></form>
+                <tr class="trBottom">
+                  <td class="thHeight"><label for="userName">사원명</label></td>
+                  <td class="thHeight" colspan="2"><input type="text" id="user_name" name="userName" maxlength="10"
+                      placeholder="사원명"></td>
+                </tr>
+
+                <tr class="trBottom">
+                  <td class="thHeight"><label for="useId">아이디</td>
+                  <td class="thHeight" colspan="2"><input type="text" id="user_Id" name="useId" maxlength="10"
+                      placeholder="아이디"></td>
+                </tr>
+
+                <tr class="trBottom">
+                  <td class="thHeight"><label for="userPosition">부서</label></td>
+                  <td class="thHeight" colspan="2"><input type="text" id="user_position" name="userPosition"
+                      maxlength="10" placeholder="부서"></td>
+                </tr>
+                </form>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="btnBox">
+            <button type="button" class="btn listBtn"><a href="">목록</a></button>
+            <button type="button" class="btn searchBtn">검색</button>
+          </div>
+        </article>
+
+        <article id="employeeList">
+          <div class="tableWrap">
+            <table title="employeeInquiryList" id="employeeInquiryListTb" class="hover row-border stripe" border="1" width="100%">
+              <colgroup>
+                <col width="8%">
+                <col width="12%">
+                <col width="12%">
+                <col width="12%">
+                <col width="12%">
+                <col width="12%">
+                <col width="16%">
+                <col width="8%">
+                <col width="8%">
+              </colgroup>
+              <thead>
+                <tr class="trBottom">
+                  <td class="thHeight">no</td>
+                  <td class="thHeight">아이디</td>
+                  <td class="thHeight">이름</td>
+                  <td class="thHeight">직급</td>
+                  <td class="thHeight">직책</td>
+                  <td class="thHeight">부서</td>
+                  <td class="thHeight">직무</td>
+                  <td class="thHeight">사용 여부</td>
+                  <td class="thHeight employeeDelete">삭제</td>
+                </tr>
+              </thead>
+              <tbody class="trBody" id="employeeInquiryListn_tb">
+                <!-- <tr class="trBottom">
+                  <td class="thHeight">01</td>
+                  <td class="thHeight">bluewave</td>
+                  <td class="thHeight">홍길동</td>
+                  <td class="thHeight">사원</td>
+                  <td class="thHeight">팀원</td>
+                  <td class="thHeight">전략기획그룹</td>
+                  <td class="thHeight">퍼블리싱</td>
+                  <td class="thHeight">Y</td>
+                  <td class="thHeight delPoint">삭제</td>
+                </tr> -->
+              </tbody>             
+            </table>
+          </div>
+         
+        </article>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

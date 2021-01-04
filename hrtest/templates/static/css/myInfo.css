@@ -1,0 +1,117 @@
+/* myInfo css */
+@charset "UTF-8";
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* basicInfo */
+#bord .bordRight .btnBox {
+    float: right;
+}
+#bord .bordRight #basicInfo {}
+#bord .bordRight #basicInfo input::placeholder {
+    color: #808080;
+    font-size: 16px;
+    font-weight: 500;
+}
+#bord .bordRight #basicInfo input::-webkit-placeholder {
+    color: #808080;
+    font-size: 16px;
+    font-weight: 500;
+}
+#bord .bordRight #basicInfo input::-ms-placeholder {
+    color: #808080;
+    font-size: 16px;
+    font-weight: 500;
+}
+#bord .bordRight .tableWrap table {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+#bord .bordRight #basicInfo p {
+    padding: 0 0 20px;
+    text-indent: 20px;
+}
+#bord .bordRight #basicInfo .tableWrap {
+    padding:0 0 30px;
+}
+#bord .bordRight #basicInfo .tableWrap table {}
+#bord .bordRight #basicInfo .tableWrap table .trBottom {
+    border-bottom: 1px solid #ccc;
+}
+#bord .bordRight #basicInfo .tableWrap table .trBottom:last-child {
+    border-bottom: 1px solid #222;
+}
+#bord .bordRight #basicInfo .tableWrap table .trBottom input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+#bord .bordRight #basicInfo .tableWrap table .trBottom input::placeholder {
+    color: #686868;
+    font-weight: 400;
+}
+#bord .bordRight #basicInfo .tableWrap table .optionWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#bord .bordRight #basicInfo .tableWrap table .optionWrap .optionBox {
+    width: calc(100% / 5);
+    -webkit-width: calc(100% / 5);
+    -moz-width: calc(100% / 5);
+    -o-width: calc(100% / 5);
+    color: #686868;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 5px;  
+}
+#bord .bordRight #basicInfo .tableWrap table .optionWrap .optionBox:first-child {
+    margin-left: 0;
+}
+#bord .bordRight #basicInfo .tableWrap table .optionWrap .optionBox:last-child {
+    margin-right: 0;
+}
+
+/* pwCheck */
+#bord .bordRight #pwCheck {}
+#bord .bordRight #pwCheck .title {}
+#bord .bordRight #pwCheck .title p {
+    color: #686868;
+    text-indent: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+#bord .bordRight #pwCheck .tableWrap {
+    padding-bottom: 30px;
+}
+#bord .bordRight #pwCheck .tableWrap table {}
+#bord .bordRight #pwCheck .tableWrap table .trBottom {
+    border-bottom: 1px solid #ccc;
+}
+#bord .bordRight #pwCheck .tableWrap table .trBottom:last-child {
+    border-bottom: 1px solid #222;
+}
+#bord .bordRight #pwCheck .tableWrap table .trBottom .thHeight {
+    padding: 15px 0;
+    text-align: left;    
+}
+#bord .bordRight #pwCheck .tableWrap table .trBottom input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+#bord .bordRight #pwCheck .tableWrap table .trBottom .thHeight {
+    text-align: center;
+    padding: 15px 0;
+}
+#bord .bordRight #pwCheck .pwNotice {
+    padding: 0 0 0 20px;
+}
+#bord .bordRight #pwCheck .pwNotice li {
+    color: #686868;
+    line-height: 1.5;
+}

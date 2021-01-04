@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HR SOLUTION</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!-- meta name="apple-mobile-web-app-capable" content="yes" /-->
+    <meta name="copyright" content="(주)블루웨이브컨설팅"/>
+    <meta name="reply-to" content="aziulsanko@bluewave.co.kr"/>
+    <meta name="Description" content="HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION"/>
+    <meta name="Keywords" content="인사평가, 인사평가솔루션, HR, HR SOLUTION"/>
+
+    <meta property="og:title" content="HR SOLUTION 공식 웹사이트 | HR SOLUTION">
+    <meta property="og:description" content="HR SOLUTION 공식 온라인 쇼핑몰 - HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION">
+    <meta property="og:url" content=""/>  <!-- 메인page -->
+    <meta property="og:image" content=""> <!-- 파비콘 -->
+    <meta name="twitter:title" content="HR SOLUTION 공식 웹사이트 | HR SOLUTION">
+    <meta name="twitter:description" content="HR SOLUTION 공식 온라인 쇼핑몰 - HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION">
+    <meta name="twitter:url" content=""> <!-- 메인page -->
+    <meta name="twitter:image" content=""> <!-- 파비콘 -->
+
+    <!--favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="icon" sizes="16x16 32x32" href="">
+
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/jquery.dataTables.min.js" defer></script>
+    <script src="static/js/common.js" defer></script>
+    
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <header>   
+            <div class="frame">
+                <div class="logo">
+                    <a href="index.html"><img src="static/img/logo.png" alt="logo이미지"></a>
+                </div>
+                        
+                <nav class="menuWrap">
+                    <ul class="menu">
+                        <li><a href="myInfo.html">내 정보</a>
+                            <nav>
+                                <a href="myInfo.html">기본 정보</a>
+                            </nav>
+                        </li>   
+                        <li><a href="capacityEva.html">역량 평가</a>
+                            <nav>
+                                <a href="capacityRes.html">역량 평가 결과(A)</a>
+                                <a href="capacityDes.html">역량 평가 설계(A)</a>
+                                <a href="capacityAnalysis.html">역량 평가 분석(A)</a>
+                            </nav>
+                        </li>                    
+                        <li><a href="employeeManagement.html">사원 관리</a>
+                            <nav>
+                                <a href="employeeManagement.html">사원 관리</a>
+                            </nav>
+                        </li>
+                        <li><a href="commonCode.html">시스템 관리</a>
+                            <nav>
+                                <a href="commonCode.html">공통 코드 관리</a>
+                            </nav>
+                        </li>
+                    </ul>                    
+                </nav>    
+        
+                <div class="menuRight">
+                    <a href="#" id="logIn">Log in</a>
+                </div>                   
+            </div>              
+        </header>
+    </div>
+
+    <!-- bord -->
+    <div class="bordContainer frame">
+        <div id="bord">
+            
+            <!-- bord left -->
+              <aside class="bordLeft">                  
+                    <ul>
+                        <li><a href="#">내 정보</a> 
+                            <ul>
+                                <li class="myInfoFirst"><a href="myInfo.html">-기본 정보</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">역량 평가</a>
+                            <ul>
+                                <li class="capacityEva"><a href="capacityEva.html">- 역량 평가</a></li>
+                                <li class="capacityRes"><a href="capacityRes.html">- 역량 평가 결과(A)</a></li>
+                                <li class="capacityDes"><a href="capacityDes.html">- 역량 평가 설계(A)</a></li>
+                                <li class="capacityAnalysis"><a href="capacityAnalysis.html">- 역량 평가 분석(A)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">사원 관리</a>
+                            <ul>
+                                <li class="employeeManagement"><a href="employeeManagement.html">- 사원 관리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">시스템 관리</a>
+                            <ul>
+                                <li class="commonCode"><a href="commonCode.html">- 공통 코드 관리</a></li>
+                            </ul>
+                        </li>
+                    </ul>                
+              </aside>    
+        
+            <!-- bord right -->
+              <section class="bordRight">
+                  <div class="contBox">
+                    <ul>
+                        <li>* 좌측 메뉴에서 항목을 선택 하세요.</li>
+                        <li>* 대시보드 기능은 추후 업데이트 예정입니다.</li>
+                    </ul>
+                  </div>
+              </section>
+        </div>       
+    </div>  
+
+    <!-- login popup -->
+    <div class="popupLogin">
+        <div class="loginImage"><img src="static/img/logo.png" alt="로고이미지"></div>
+        <ul>
+            <li><input type="text" placeholder="아이디를 입력하세요.">
+                <span class="VerboseName active">Verbose name이 출력되는 영역입니다.</span>
+            </li>
+            <li><input type="password" placeholder="패스워드를 입력하세요.">
+                <span class="VerboseName active">Verbose name이 출력되는 영역입니다.</span>
+            </li>
+        </ul>
+        <div class="loginBtn">
+            <button type="submit">LOGIN</button>
+        </div>
+        <div class="notice">
+            <p>아이디 및 비밀번호 발급 및 찾기는 관리자에게</p> 
+            <p>문의 후 이용 가능합니다.</p> 
+        </div>       
+    </div>
+    <!-- login bg -->
+    <div class="loginBg"></div>
+</body>
+</html>

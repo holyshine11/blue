@@ -1,0 +1,90 @@
+/* main css */
+@charset "UTF-8";
+
+/* login popup */
+.popupLogin {
+    padding: 20px;
+    position: fixed;
+    width: 600px;
+    height: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    z-index: 9999;
+    opacity: 1;
+}
+.popupLogin.active {
+    opacity: 0;
+    z-index: -1;
+}
+.popupLogin .loginImage {
+    width: 100%;
+    height: 300px;
+    background: rgb(233, 233, 233);
+}
+.popupLogin .loginImage img {
+    display: block;
+    margin: 0 auto;
+    line-height: 1;
+    padding: 112px;
+}
+.popupLogin > ul {
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+}
+.popupLogin > ul > li {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+}
+.popupLogin > ul > li input {
+    width: 100%;
+    padding: 10px;
+}
+.popupLogin .loginBtn {  
+    width: 200px;
+    height: 50px;   
+    margin: 0 auto; 
+    font-size: 16px;
+    padding-top: 10px;
+}
+.popupLogin .loginBtn button {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #686868;
+    color: #fff;
+    cursor: pointer;    
+    border: 1px solid #686868;
+    font-size: 1.2rem;
+}
+.popupLogin p {
+    text-align: center;
+    word-break: keep-all;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.popupLogin .notice {
+    padding-top: 50px;
+}
+
+/* login bg */
+.loginBg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 9998;
+    opacity: 1;
+}
+.loginBg.active {
+    opacity: 0;
+    z-index: -1;
+}

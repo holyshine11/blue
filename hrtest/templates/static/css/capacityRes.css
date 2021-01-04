@@ -1,0 +1,91 @@
+/* capacityRes.css */
+@charset "UTF-8";
+#bord .bordLeft .capacityEva:hover a {
+    color: #222;
+}
+#bord .bordLeft .capacityDes:hover a {
+    color: #222;
+}
+#bord .bordRight .tableWrap table .trBottom .thHeight.title {
+    color: #179AFF;
+    cursor: pointer;
+}
+#bord .bordRight .tableWrap table .trBottom .thHeight.totalSc {
+    background: rgb(248, 248, 215);
+    cursor: pointer;
+    line-height: 1.1;
+}
+.scorePopUp {
+    padding: 40px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* 스코어 팝업 */
+.scorePopUp h3 {
+    font-size: 20px;
+    padding: 0 0 35px;
+}
+#scorePopUpTb {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+#scorePopUpTb .trBottom {
+    text-align: center;            
+    border-bottom: 1px solid #ccc;
+} 
+#scorePopUpTb .trBottom .thHeight.title {
+    color: #222;
+}
+#scorePopUpTb thead .trBottom {
+    border-bottom: 1px solid #222;
+} 
+#scorePopUpTb tbody .trBottom:last-child {
+    border: none;
+}
+#scorePopUpTb .trBottom .thHeight {
+    padding: 15px 0;
+    color: #686868;
+}
+.btnBox {
+    padding: 25px 0 0;
+}
+
+/* 부서장 팝업 */
+.commentPopUp {
+    padding: 40px;
+}
+.commentPopUp h3 {
+    font-size: 20px;
+    padding: 0 0 35px;
+}
+#commentPopUpTb {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+#commentPopUpTb .trBottom {
+    text-align: center;            
+    border-bottom: 1px solid #ccc;
+} 
+#commentPopUpTb thead .trBottom {
+    border-bottom: 1px solid #222;
+} 
+#commentPopUpTb tbody .trBottom:last-child {
+    border: none;
+}
+#commentPopUpTb .trBottom .thHeight {
+    padding: 15px 0;
+    border-right: 1px solid #ccc;
+}
+#commentPopUpTb .trBottom .thHeight:last-child {
+    border-right: none;
+}
+#commentPopUpTb .trBottom .thHeight.description {
+    height: 230px;
+    padding: 15px;
+    color: #686868;
+    line-height: 1.5;
+    word-break: keep-all;
+}

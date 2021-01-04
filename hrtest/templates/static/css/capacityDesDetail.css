@@ -1,0 +1,74 @@
+/* capacityDesDetail.css */
+@charset "UTF-8";
+.btnBox {
+    text-align: right;
+    padding-bottom: 20px;
+}
+.btnBox [type="button"]{
+    margin-left: 10px;
+}
+.subTitle {
+    padding: 15px;
+}
+
+/* commonCapacity */
+#bord .bordRight #addArticle .tableWrap table .thHeight {
+    position: relative;
+}
+#bord .bordRight #addArticle .tableWrap table .thHeight input {
+    width: 90%;
+    height: 74px;
+    text-align: center;
+    word-break: keep-all;   
+    color: #686868;
+    margin: 0 auto;
+    padding: 10px;
+}
+#bord .bordRight #addArticle .tableWrap table .thHeight textarea {
+    position: absolute;
+    width: 90%;
+    height: 74px;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    z-index: 1;
+    padding: 10px;
+    text-align: center;
+    word-break: keep-all;
+    color: #686868;
+}
+#bord .bordRight #addArticle article {
+    padding-bottom: 30px;
+}
+#bord .bordRight .tableWrap table .trBottom .thHeight.tdDelete {
+    color: #ff0000;
+    text-decoration: underline;
+}
+#bord .bordRight .userInfoList {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+#bord .bordRight .userInfoList .month {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#bord .bordRight .userInfoList .month [type="date"]{  
+    padding: 10px;
+}
+#bord .bordRight .userInfoList .month span.dateBox:last-child {
+    margin: 0 10px;
+}
+#bord .bordRight .userInfoList select {  
+    padding: 10px;
+    float: left;
+    width: 33.33%;
+}
+#bord .bordRight .userInfoList input {
+    padding: 10px;
+    float: left;
+    width: 100%;
+} 

@@ -1,0 +1,128 @@
+<!-- employeeAdd.html (사원등록팝업) -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HR SOLUTION | 사원등록팝업</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta name="apple-mobile-web-app-capable" content="yes" /-->
+  <meta name="copyright" content="(주)블루웨이브컨설팅" />
+  <meta name="reply-to" content="aziulsanko@bluewave.co.kr" />
+  <meta name="Description" content="HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION" />
+  <meta name="Keywords" content="인사평가, 인사평가솔루션, HR, HR SOLUTION" />
+
+  <!--favicon -->
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="">
+  <link rel="icon" sizes="16x16 32x32" href="">
+
+  <link rel="stylesheet" href="static/css/reset.css">
+  <link rel="stylesheet" href="static/css/common.css">
+  <link rel="stylesheet" href="static/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="static/css/employeeManagement.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="static/js/jquery.dataTables.min.js" defer></script>
+  <script src="static/js/common.js" defer></script>
+  <script src="static/js/employeeManagement.js" defer></script>
+</head>
+
+<body>
+    <section id="employeeAdd">
+        <article class="titleTop">
+            <p><span class="headMark"></span> 사원 등록</p>    
+        </article>
+    
+        <article id="employeeAddBox">
+            <div class="tableWrap">
+                <table title="employeeAdd" class="display" id="employeeAddTb" border="1" width="100%">
+                    <colgroup> 
+                        <col width="20%">
+                        <col width="80%">
+                    </colgroup>    
+                
+                    <tbody> 
+                        <form action="#" method="post">
+                            <tr class="trBottom">
+                                <td class="thHeight"><label for="userId">아이디</label></td>
+                                <td class="thHeight" colspan="2"><input type="text" id="user_id" name="userId" maxlength="10" placeholder="담당자 아이디"></td> 
+                            </tr>                       
+    
+                            <tr class="trBottom">                       
+                                <td class="thHeight"><label for="userName">이름 <bold class="starMark">*</bold></label></td>      
+                                <td class="thHeight"><input type="text" id="user_name" name="userName" maxlength="10" placeholder="담당자 이름">
+                                    <span class="VerboseName active">Verbose name이 출력되는 영역입니다.</span>
+                                </td>
+                            </tr>
+    
+                            <tr class="trBottom">                       
+                                <td class="thHeight"><label for="userPosition">직급</label></td>
+                                <td class="optionWrap thHeight" colspan="5">
+                                    <select class="optionBox" name="" id="">
+                                        <option value="직무" selected="selected">직무</option>
+                                        <option value="영업&기획">영업&기획</option>
+                                        <option value="연구개발">연구개발</option>
+                                        <option value="경영지원">경영지원</option>	
+                                        <option value="디자인">디자인</option>	
+                                    </select>    
+                                </td>                                
+                            </tr>
+    
+                            <tr class="trBottom">                       
+                                <td class="thHeight"><label for="userPosition">직책</label></td>
+                                <td class="optionWrap thHeight" colspan="5">
+                                    <select class="optionBox" name="" id="">
+                                        <option value="직무" selected="selected">직책</option>
+                                        <option value="영업&기획">영업&기획</option>
+                                        <option value="연구개발">연구개발</option>
+                                        <option value="경영지원">경영지원</option>	
+                                        <option value="디자인">디자인</option>	
+                                    </select>    
+                                </td>                                           
+                            </tr>
+    
+                            <tr class="trBottom">                       
+                                <td class="thHeight"><label for="userPosition">부서</label></td>
+                                <td class="optionWrap thHeight" colspan="5">
+                                    <select class="optionBox" name="" id="">
+                                        <option value="직무" selected="selected">부서</option>
+                                        <option value="영업&기획">영업&기획</option>
+                                        <option value="연구개발">연구개발</option>
+                                        <option value="경영지원">경영지원</option>	
+                                        <option value="디자인">디자인</option>	
+                                    </select>    
+                                </td>                                                     
+                            </tr>
+    
+                            <tr class="trBottom">                       
+                                <td class="thHeight"><label for="userDuties">직무 <bold class="starMark">*</bold></label></td>      
+                                <td class="thHeight"><input type="text" id="user_Duties" name="userDuties" maxlength="10" placeholder="담당자 직무">
+                                    <span class="VerboseName active">Verbose name이 출력되는 영역입니다.</span>
+                                </td>                                    
+                            </tr>      
+                            
+                            <tr class="trBottom">                       
+                                <td class="thHeight"><label for="userChecked">사용여부</label></td>
+                                <td class="optionWrap thHeight" colspan="5">
+                                    <select class="optionBox used" name="" id="">
+                                        <option value="Y" selected="selected">Y</option>
+                                        <option value="N">N</option>
+                                    </select>    
+                                </td>                                                     
+                            </tr>
+                        </form>                         
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        
+        <div class="btnBox">
+            <button type="button" class="btn cancelBtn">취소</button>
+            <button type="button" class="btn saveBtn">등록</button>
+        </div>
+    </section>
+
+</body>
+
+</html>

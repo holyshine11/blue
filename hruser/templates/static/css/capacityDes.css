@@ -1,0 +1,11 @@
+/* capacityDes.css */
+@charset "UTF-8";
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.btnBox {
+    float: right;
+    padding-bottom: 30px;
+}

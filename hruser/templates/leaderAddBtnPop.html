@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HR SOLUTION  | 역량평가분석디테일</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!-- meta name="apple-mobile-web-app-capable" content="yes" /-->
+    <meta name="copyright" content="(주)블루웨이브컨설팅"/>
+    <meta name="reply-to" content="aziulsanko@bluewave.co.kr"/>
+    <meta name="Description" content="HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION"/>
+    <meta name="Keywords" content="인사평가, 인사평가솔루션, HR, HR SOLUTION"/>
+
+    <meta property="og:title" content="HR SOLUTION 공식 웹사이트 | HR SOLUTION">
+    <meta property="og:description" content="HR SOLUTION 공식 온라인 쇼핑몰 - HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION">
+    <meta property="og:url" content=""/>  <!-- 메인page -->
+    <meta property="og:image" content=""> <!-- 파비콘 -->
+    <meta name="twitter:title" content="HR SOLUTION 공식 웹사이트 | HR SOLUTION">
+    <meta name="twitter:description" content="HR SOLUTION 공식 온라인 쇼핑몰 - HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION">
+    <meta name="twitter:url" content=""> <!-- 메인page -->
+    <meta name="twitter:image" content=""> <!-- 파비콘 -->
+
+    <!--favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="icon" sizes="16x16 32x32" href="">
+
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="static/css/capacityAnalysisDetail.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/jquery.dataTables.min.js" defer></script>
+    <script src="static/js/common.js" defer></script>
+    <script src="static/js/capacityAnalysisDetail.js" defer></script>    
+    
+</head>
+
+<body>
+   <!-- leaderCommentPopUp (부서장 코멘트 팝업) -->
+   <div class="leaderCommentPopUp">            
+    <h3><span class="headMark"></span> 부서장 코멘트</h3>
+    <div class="tableWrap">
+        <table title="commentPopUp" id="leaderCommentPopUpTb" border="1" width="100%">
+            <colgroup> 
+                <col width="50%">
+                <col width="50%">
+            </colgroup>
+
+            <thead>
+                <tr class="trBottom">                                    
+                    <td class="thHeight">평가 총평</td> 
+                    <td class="thHeight">육성 계획</td> 
+                </tr> 
+            </thead>  
+
+            <tbody id="commentPopUpTb_tb">      
+                <tr class="trBottom">                                    
+                    <td class="thHeight description">평가 총평을 입력해주세요.</td>
+                    <td class="thHeight description">육성 계획을 입력해주세요.</td>
+                </tr>                                   
+            </tbody>
+        </table>                
+    </div>
+
+    <div class="btnBox">
+        <button type="button" class="btn cancelBtn">닫기</button>
+        <button type="button" class="btn saveBtn">저장</button>
+    </div>
+
+    <div class="listBox">
+        <h3><span class="headMark"></span> 코멘트 리스트</h3>
+        <div class="tableWrap">
+            <table title="commentPopUp" id="leaderCommentPopUpTb" border="1" width="100%">
+                <colgroup> 
+                    <col width="10%">
+                    <col width="90%">
+                </colgroup>
+    
+                <thead>
+                    <tr class="trBottom">                                    
+                        <td class="thHeight">번호</td> 
+                        <td class="thHeight">등급</td> 
+                    </tr> 
+                </thead>  
+    
+                <tbody id="commentPopUpTb_tb">      
+                    <tr class="trBottom">                                    
+                        <td class="thHeight">1</td>
+                        <td class="thHeight question"><strong>연초 수립했던 목표들이 무엇인가요?</strong> 
+                            <div>스스로 기대와 실제 성과를 비교하면서 객관적으로 평가할 수 있는 기준을 마련합니다.</div>
+                        </td>
+                    </tr>     
+                    <tr class="trBottom">                                    
+                        <td class="thHeight">2</td>
+                        <td class="thHeight question"><strong>목표달성을 하기 위해서 했던 중요한 전략이나 활동을 이야기해 주세요.</strong> 
+                            <div>우선순위를 갖고 가중치가 높은 목표와 활동에 집중해서 보다 전략적으로 대화하기를 추천합니다.</div>
+                        </td>
+                    </tr>  
+                    <tr class="trBottom">                                    
+                        <td class="thHeight">3</td>
+                        <td class="thHeight question"><strong>우수한 부분과 미흡한 부분을 구분 해서 이야기해 주세요.</strong> 
+                            <div>가치 중립적 정보를 기초로 객관적으로 자신을 평가할 수 있도록 유도하기 위한 것입니다.가치 중립적 정보를 기초로 객관적으로 자신을 평가할 수 있도록 유도하기 위한 것입니다.</div>
+                        </td>
+                    </tr>                                
+                </tbody>
+            </table>                
+        </div>
+    </div>
+
+   
+</div>   
+
+    
+</body>
+</html>

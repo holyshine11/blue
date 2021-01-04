@@ -1,0 +1,154 @@
+/* capacityDesDetail css (역량 평가 상세페이지) */
+@charset "UTF-8";
+.btnBox {
+    text-align: right;
+    padding-bottom: 20px;
+}
+#bord .bordRight .tableWrap table .trHead .trBottom {
+    border-bottom: 1px solid #ccc;
+}
+#bord .bordRight .tableWrap table .trHead .trBottom:last-child {
+    border-bottom: none;
+}
+
+/* dadan */
+#evaDetail .dadan  {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;    
+}
+
+/* dadanLeft */
+#evaDetail .dadan .dadanLeft {
+    width: 49%;
+    height: 780px;
+    overflow-x: scroll;
+}
+#evaDetail .dadan .dadanLeft .title {}
+#evaDetail .dadan .dadanLeft .title p {
+    color: #686868;
+    text-indent: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+#evaDetail .dadan .dadanLeft .userEvaluation {}
+#evaDetail .dadan .dadanLeft .userEvaluation .tableWrap {}
+#evaDetail .dadan .dadanLeft .userEvaluation .tableWrap .addBtnBox {
+    text-align: center;
+    padding: 20px 0;
+}
+#evaDetail .dadan .dadanLeft .userEvaluation .tableWrap table {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+#evaDetail .dadan .dadanLeft .userEvaluation .tableWrap table .trHead {}
+#evaDetail .dadan .dadanLeft .userEvaluation .tableWrap table .trHead .trBottom {
+    border-bottom: 1px solid #222;
+}
+#evaDetail .dadan .dadanLeft .userEvaluation .tableWrap table .trHead .trBottom .thHeight {
+    padding: 15px 0;
+    text-align: center;
+    color: #686868;
+}
+#evaDetail .dadan .dadanLeft .userEvaluation .tableWrap table .trHead .trBottom .thHeight.description {
+    color: #686868;
+}
+#evaDetail .dadan .dadanLeft .userEvaluation .tableWrap table .trHead .trBottom .thHeight.title {
+    color: #222;
+    font-weight: 500;
+}
+
+/* dadanRight */
+#bord #evaDetail .evaInfo .tableWrap #evaInfoTb .description {
+    color: #686868;
+}
+#bord #evaInfoTb {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+#evaDetail .dadan .dadanRight {
+    width: 49%;
+    height: 780px;
+    overflow-x: scroll;
+}
+#evaDetail .dadan .dadanRight .dadanRightBtn {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#evaDetail .dadan .dadanRight .title {}
+#evaDetail .dadan .dadanRight .title p {
+    color: #686868;
+    text-indent: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+#evaDetail .dadan .dadanRight .evaluationContainer {}
+#evaDetail .dadan .dadanRight .evaluationContainer .tableWrap {
+    padding-bottom: 30px;
+}
+#evaDetail .dadan .dadanRight .evaluationContainer .tableWrap .commonCapacity {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    padding: 15px 0;
+}
+#evaDetail .dadan .dadanRight .evaluationContainer .tableWrap .commonCapacity h4 {
+    padding-bottom: 15px;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid #222;
+}
+#evaDetail .dadan .dadanRight .evaluationContainer .tableWrap .commonCapacity .wrap {
+    padding: 0 0 15px;
+    border-bottom: 1px solid #ccc;
+}
+#evaDetail .dadan .dadanRight .evaluationContainer .tableWrap .commonCapacity .wrap:last-child {
+    border-bottom: none;
+}
+#evaDetail .dadan .dadanRight .evaluationContainer .tableWrap .commonCapacity .titleName {
+    padding: 15px 0 20px;
+    font-weight: 500;
+    text-indent: 20px;
+}
+#evaDetail .dadan .dadanRight .evaluationContainer .tableWrap .commonCapacity .description {
+    color: #686868;
+    word-break: keep-all;
+    line-height: 1.4;
+    padding: 0 0 15px 20px;
+}
+#evaDetail .dadan .dadanRight .evaluationContainer .tableWrap .commonCapacity .iuputSelect {
+    text-align: center;
+    font-size: 17px;
+    margin: 0 10px;
+    color: #686868;
+}
+
+/* addBtnPopUp */
+.addBtnPopUp { 
+    padding: 40px; 
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.addBtnPopUp h3 {
+    font-size: 20px;
+    padding-bottom: 35px;
+}
+#addBtnPopUpTb {
+    text-align: center;           
+} 
+.addBtnPopUp .btnBox {
+    text-align: center;
+}
+.addBtnPopUp .btnBox [type="button"]{
+    margin: 0 5px;
+}
+.addBtnPopUp .optionContainer {
+    padding-bottom: 30px;
+}
+.addBtnPopUp .optionBox {
+    width: 100px;
+    padding: 8px 15px;
+    margin: 0 5px 0 0;
+    border: 1px solid #222;
+}

@@ -1,0 +1,98 @@
+<!-- addBtnPop.html (역량 평가 상세페이지) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HR SOLUTION | 평가 대상자 추가 윈도우 팝업</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!-- meta name="apple-mobile-web-app-capable" content="yes" /-->
+    <meta name="copyright" content="(주)블루웨이브컨설팅"/>
+    <meta name="reply-to" content="aziulsanko@bluewave.co.kr"/>
+    <meta name="Description" content="HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION"/>
+    <meta name="Keywords" content="인사평가, 인사평가솔루션, HR, HR SOLUTION"/>
+
+    <!--favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="icon" sizes="16x16 32x32" href="">
+
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="static/css/capacityEvaDetail.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/jquery.dataTables.min.js" defer></script>
+    <script src="static/js/common.js" defer></script>
+    <script src="static/js/capacityEvaDetail.js" defer></script>
+</head>
+<body>
+    <!-- addBtnPopUp -->
+    <div class="addBtnPopUp">        
+        <h3><span class="headMark"></span> 평가 대상자 추가</h3>
+        <div class="optionContainer">
+            <select class="optionBox" name="" id="">               
+                <option value="PM">부서 전체</option>
+                <option value="개발팀">개발팀</option>
+                <option value="기획팀">기획팀</option>		
+                <option value="디자인팀">디자인팀</option>	
+                <option value="경영팀">경영팀</option>	
+            </select>
+            <select class="optionBox" name="" id="">               
+                <option value="직급전체">직급 전체</option>
+                <option value="차장">차장</option>
+                <option value="과장">과장</option>		
+                <option value="대리">대리</option>		
+                <option value="주임">주임</option>		
+                <option value="사원">사원</option>		
+            </select>
+        </div>
+        
+        <div class="tableWrap">
+            <table title="addBtnPopUpList" id="addBtnPopUpTb" class="hover row-border stripe" border="1" width="100%">
+                <colgroup> 
+                    <col width="5%">
+                    <col width="20%">
+                    <col width="10%">
+                    <col width="10%">
+                    <col width="10%">
+                    <col width="20%">
+                    <col width="25%">
+                </colgroup>      
+                        
+                <thead> 
+                    <tr class="trBottom title">
+                        <td class="thHeight"><input type="checkbox" name="" id=""></td>
+                        <td class="thHeight">아이디</td> 
+                        <td class="thHeight">이름</td> 
+                        <td class="thHeight">직급</td> 
+                        <td class="thHeight">직책</td> 
+                        <td class="thHeight">부서</td> 
+                        <td class="thHeight">직무 </td> 
+                    </tr>      
+                </thead>   
+                <tbody id="popUp_tb">
+                    <!-- 
+                    <tr class="trBottom">
+                        <td class="thHeight"><input type="checkbox" name="" id=""></td>
+                        <td class="thHeight">bluewave01</td> 
+                        <td class="thHeight">일길동</td> 
+                        <td class="thHeight">사원</td> 
+                        <td class="thHeight">대리</td> 
+                        <td class="thHeight">개발팀</td> 
+                        <td class="thHeight">웹디자인,퍼블리싱</td> 
+                    </tr>       
+                    -->                               
+                </tbody>
+            </table>                
+        </div>                               
+        
+
+        <div class="btnBox smallBtnBox">
+            <button type="button" class="smallBtn cancelBtn">취소</button>
+            <button type="button" class="smallBtn saveBtn">추가</button>
+        </div>
+    </div>
+
+</body>
+</html>

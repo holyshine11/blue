@@ -1,0 +1,434 @@
+<!-- capacityEvaDetail.html (역량 평가 상세페이지) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HR SOLUTION | 역량 평가 상세 페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!-- meta name="apple-mobile-web-app-capable" content="yes" /-->
+    <meta name="copyright" content="(주)블루웨이브컨설팅"/>
+    <meta name="reply-to" content="aziulsanko@bluewave.co.kr"/>
+    <meta name="Description" content="HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION"/>
+    <meta name="Keywords" content="인사평가, 인사평가솔루션, HR, HR SOLUTION"/>
+
+    <!--favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="icon" sizes="16x16 32x32" href="">
+
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="static/css/capacityEvaDetail.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/jquery.dataTables.min.js" defer></script>
+    <script src="static/js/common.js" defer></script>
+    <script src="static/js/capacityEvaDetail.js" defer></script>
+</head>
+<body>
+
+    <!-- header -->
+    <div id="header">
+        <header>   
+            <div class="frame">
+                <div class="logo">
+                    <a href="index.html"><img src="static/img/logo.png" alt="logo이미지"></a>
+                </div>
+                        
+                <nav class="menuWrap">
+                    <ul class="menu">
+                        <li><a href="myInfo.html">내 정보</a>
+                            <nav>
+                                <a href="myInfo.html">기본 정보</a>
+                            </nav>
+                        </li>   
+                        <li><a href="capacityEva.html">역량 평가</a>
+                            <nav>
+                                <a href="capacityRes.html">역량 평가 결과(A)</a>
+                                <a href="capacityDes.html">역량 평가 설계(A)</a>
+                                <a href="capacityAnalysis.html">역량 평가 분석(A)</a>
+                            </nav>
+                        </li>                    
+                        <li><a href="employeeManagement.html">사원 관리</a>
+                            <nav>
+                                <a href="employeeManagement.html">사원 관리</a>
+                            </nav>
+                        </li>
+                        <li><a href="commonCode.html">시스템 관리</a>
+                            <nav>
+                                <a href="commonCode.html">시스템 관리</a>
+                            </nav>
+                        </li>
+                    </ul>                    
+                </nav>    
+        
+                <div class="menuRight">
+                    <a href="#" id="logIn">Log in</a>
+                </div>                   
+            </div>              
+        </header>
+    </div>
+
+    <!-- bord -->
+    <div class="bordContainer frame">
+        <div id="bord">
+            <!-- bord left -->
+            <aside class="bordLeft">        
+                <p>역량 평가</p>  
+                <div class="capacityEva MenuDepth"><a href="capacityEva.html"> - 역량 평가</a></div>  
+                <div class="capacityRes"><a href="capacityRes.html"> - 역량 평가 결과(A)</a></div>  
+                <div class="capacityDes"><a href="capacityDes.html"> - 역량 평가 설계(A)</a></div>  
+                <div class="capacityAnalysis"><a href="capacityAnalysis.html">- 역량 평가 분석(A)</a></div>
+            </aside> 
+
+            <!-- bord right -->
+            <div class="bordRight">
+                <section id="evaDetail"> 
+                    <article class="titleTop">
+                        <h2>역량 평가</h2>
+                        <div class="title">
+                            <p><span class="headMark"></span> 기본 정보</p>     
+                            <div class="btnBox">
+                                <button type="button" class="btn listBtn"><a href="capacityEva.html">목록</a></button>
+                            </div>           
+                        </div>   
+                    </article>
+                
+                    <article class="evaInfo"> 
+                        <div class="tableWrap">
+                            <table title="evaInfo" id="evaInfoTb"  border="1" width="100%">
+                                <colgroup>
+                                    <col width="10%">
+                                    <col width="40%">
+                                    <col width="10%">
+                                    <col width="40%">
+                                </colgroup>      
+                                        
+                                <tbody class="trHead"> 
+                                    <tr class="trBottom">
+                                        <td class="thHeight">제목</td>
+                                        <td class="thHeight description">2020년 ¼분기 역량 평가</td>
+                                        <td class="thHeight">상태</td>
+                                        <td class="thHeight description">평가중</td>
+                                    </tr>   
+                
+                                    <tr class="trBottom">
+                                        <td class="thHeight">부서</td>
+                                        <td class="thHeight description">미래기술개발그룹</td>
+                                        <td class="thHeight">기간</td>
+                                        <td class="thHeight description">2020-10-05 ~ 2020-10-05 </td>
+                                    </tr>  
+                
+                                    <tr class="trBottom">
+                                        <td class="thHeight">설명</td>
+                                        <td class="thHeight description" colspan="3">최대값 최빈값은 무효 처리 되오니 주의 하세요. </td>
+                                    </tr>                       
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+                
+                    <article class="dadan">
+                        <!-- dadan Left -->
+                        <div class="dadanLeft">
+                            <div class="title">
+                                <p><span class="headMark"></span> 평가 대상자</p>                     
+                            </div>
+                
+                            <!-- 평가 대상자 -->         
+                            <div class="userEvaluation">
+                                <div class="tableWrap">
+                                    <table title="userEvaluation" border="1" width="100%">
+                                        <colgroup>
+                                            <col width="60%">
+                                            <col width="20%">
+                                            <col width="20%">
+                                        </colgroup>      
+                                                    
+                                        <thead class="trHead"> 
+                                            <tr class="trBottom">
+                                                <td class="thHeight title">수행 평가(본인 포함)</td>
+                                                <td class="thHeight title">상태</td>
+                                                <td class="thHeight title">삭제</td>
+                                                <tbody class="tbleShow"></tbody> 
+                                            </tr>                                                        
+                                        </thead>  
+                                        <tbody class="trHead"> 
+                                            <tr class="trBottom removeUser">
+                                                <td class="thHeight dadanLeftdes" colspan="3">평가 대상자가 없습니다.</td>                                 
+                                            </tr>  
+                                        </tbody>       
+                                    </table>   
+                                    <!-- addBtnBox (추가 버튼) 클릭 시 .removeUser 삭제, .addUser 추가 -->
+                                    <div class="addBtnBox smallBtnBox">
+                                        <button class="smallBtn addBtn" type="button">추가</button>                    
+                                    </div>               
+                                </div>                
+                
+                                <!-- 하향 평가 -->
+                                <div class="evaluationDowm">
+                                    <div class="tableWrap">
+                                        <table title="evaluationDowm" border="1" width="100%">
+                                            <colgroup>
+                                                <col width="60%">
+                                                <col width="20%">
+                                                <col width="20%">
+                                            </colgroup>      
+                                                        
+                                            <thead class="trHead"> 
+                                                <tr class="trBottom">
+                                                    <td class="thHeight title">하향 평가</td>
+                                                    <td class="thHeight title">상태</td>
+                                                    <td class="thHeight title">삭제</td>
+                                                </tr>   
+                                            </thead>
+                
+                                            <tbody class="trHead"> 
+                                                <tr class="trBottom removeUser">
+                                                    <td class="thHeight dadanLeftdes" colspan="3">평가 대상자가 없습니다.</td>                                 
+                                                </tr>  
+                                            </tbody>  
+                                        </table>     
+                                      
+                                        <div class="addBtnBox smallBtnBox">
+                                            <button class="smallBtn addBtn" type="button">추가</button>                    
+                                        </div>               
+                                    </div>                  
+                                </div>
+                                
+                                <!-- 상향 평가 -->
+                                <div class="evaluationUp">
+                                    <div class="tableWrap">
+                                        <table title="evaluationUp" border="1" width="100%">
+                                            <colgroup>
+                                                <col width="60%">
+                                                <col width="20%">
+                                                <col width="20%">
+                                            </colgroup>      
+                                                        
+                                            <thead class="trHead"> 
+                                                <tr class="trBottom">
+                                                    <td class="thHeight title">상향 평가</td>
+                                                    <td class="thHeight title">상태</td>
+                                                    <td class="thHeight title">삭제</td>
+                                                </tr>   
+                                            </thead>
+                
+                                            <tbody class="trHead"> 
+                                                <tr class="trBottom removeUser">
+                                                    <td class="thHeight dadanLeftdes" colspan="3">평가 대상자가 없습니다.</td>                                 
+                                                </tr>  
+                                            </tbody>  
+                                        </table>  
+                                        <div class="addBtnBox smallBtnBox">
+                                            <button class="smallBtn addBtn" type="button">추가</button>                    
+                                        </div>                           
+                                    </div>                   
+                                </div> 
+                
+                                <!-- 하향 평가 -->
+                                <div class="evaluationDowm">
+                                    <div class="tableWrap">
+                                        <table title="evaluationDowm" border="1" width="100%">
+                                            <colgroup>
+                                                <col width="60%">
+                                                <col width="20%">
+                                                <col width="20%">
+                                            </colgroup>      
+                                                        
+                                            <thead class="trHead"> 
+                                                <tr class="trBottom">
+                                                    <td class="thHeight title">하향 평가</td>
+                                                    <td class="thHeight title">상태</td>
+                                                    <td class="thHeight title">삭제</td>
+                                                </tr>   
+                                            </thead>
+                
+                                            <tbody class="trHead"> 
+                                                <tr class="trBottom removeUser">
+                                                    <td class="thHeight dadanLeftdes" colspan="3">평가 대상자가 없습니다.</td>                                 
+                                                </tr>  
+                                            </tbody>  
+                                        </table>     
+                                        <div class="addBtnBox smallBtnBox">
+                                            <button class="smallBtn addBtn" type="button">추가</button>                    
+                                        </div>              
+                                    </div>                  
+                                </div>
+                                
+                                <!-- 상향 평가 -->
+                                <div class="evaluationUp">
+                                    <div class="tableWrap">
+                                        <table title="evaluationUp" border="1" width="100%">
+                                            <colgroup>
+                                                <col width="60%">
+                                                <col width="20%">
+                                                <col width="20%">
+                                            </colgroup>      
+                                                        
+                                            <thead class="trHead"> 
+                                                <tr class="trBottom">
+                                                    <td class="thHeight title">상향 평가</td>
+                                                    <td class="thHeight title">상태</td>
+                                                    <td class="thHeight title">삭제</td>
+                                                </tr>   
+                                            </thead>
+                
+                                            <tbody class="trHead"> 
+                                                <tr class="trBottom removeUser">
+                                                    <td class="thHeight dadanLeftdes" colspan="3">평가 대상자가 없습니다.</td>                                 
+                                                </tr>  
+                                            </tbody>  
+                                        </table>  
+                                        <div class="addBtnBox smallBtnBox">
+                                            <button class="smallBtn addBtn" type="button">추가</button>                    
+                                        </div>                          
+                                    </div>                   
+                                </div> 
+                            </div>               
+                        </div>    
+                
+                        <!-- dadan Right -->
+                        <div class="dadanRight">
+                            <div class="title">
+                                <p><span class="headMark"></span> 평가 항목</p>                     
+                            </div>
+                
+                            <div class="evaluationContainer">                
+                                <div class="tableWrap">
+                                    <div class="commonCapacity">
+                                        <h4>A. 공통 역량</h4>
+                                        <div class="wrap">
+                                            <p class="titleName">1. 도전</p>
+                                            <p class="description">
+                                                자발적으로 도전적인 목표를 설정하고, 성공에 대한 확신으로 소신 있게 목표를 추구 한다.
+                                            </p>
+                                            <form action="" method="post">
+                                                <div class="iuputSelect">
+                                                    <input type="radio" name="Challenge" value="S">S
+                                                    <input type="radio" name="Challenge" value="A">A
+                                                    <input type="radio" name="Challenge" value="B">B
+                                                    <input type="radio" name="Challenge" value="C">C
+                                                    <input type="radio" name="Challenge" value="D">D
+                                                </div>                                                           
+                                            </form>      
+                                        </div>                                                                  
+                                    </div> 
+                                </div>
+
+                                <div class="tableWrap">
+                                    <div class="commonCapacity">
+                                        <h4>B. 직무 역량</h4>
+                                        <div class="wrap">
+                                            <p class="titleName">1. 전문성</p>
+                                            <p class="description">
+                                                업무 수행에 필요한 지식을 체계적으로 응용하여 이를 업무에 적용한다.
+                                            </p>
+                                            <form action="" method="post">
+                                                <div class="iuputSelect">
+                                                    <input type="radio" name="Challenge" value="S">S
+                                                    <input type="radio" name="Challenge" value="A">A
+                                                    <input type="radio" name="Challenge" value="B">B
+                                                    <input type="radio" name="Challenge" value="C">C
+                                                    <input type="radio" name="Challenge" value="D">D
+                                                </div>                                                           
+                                            </form>      
+                                        </div>         
+                                        <div class="wrap">
+                                            <p class="titleName">2. 역량 강화</p>
+                                            <p class="description">
+                                                새로운 전문지식과 정보를 이해하고 필요 시 교육 참석, 세미나, 설명회 등 적극 참여하여 확보한다.
+                                            </p>
+                                            <form action="" method="post">
+                                                <div class="iuputSelect">
+                                                    <input type="radio" name="Challenge" value="S">S
+                                                    <input type="radio" name="Challenge" value="A">A
+                                                    <input type="radio" name="Challenge" value="B">B
+                                                    <input type="radio" name="Challenge" value="C">C
+                                                    <input type="radio" name="Challenge" value="D">D
+                                                </div>                                                           
+                                            </form>      
+                                        </div>                                                                   
+                                    </div> 
+                                </div>
+
+                                <div class="tableWrap">
+                                    <div class="commonCapacity">
+                                        <h4>C. 리더십</h4>
+                                        <div class="wrap">
+                                            <p class="titleName">1. 육성</p>
+                                            <p class="description">
+                                                구성원 개개인에 대해 관심을 가지며, 개인의 능력과 적성을 고려하여 성장 할 수 있도록 배려한다.
+                                            </p>
+                                            <form action="" method="post">
+                                                <div class="iuputSelect">
+                                                    <input type="radio" name="Challenge" value="S">S
+                                                    <input type="radio" name="Challenge" value="A">A
+                                                    <input type="radio" name="Challenge" value="B">B
+                                                    <input type="radio" name="Challenge" value="C">C
+                                                    <input type="radio" name="Challenge" value="D">D
+                                                </div>                                                           
+                                            </form>      
+                                        </div>           
+                                        <div class="wrap">
+                                            <p class="titleName">2. 혁신</p>
+                                            <p class="description">
+                                                기존의 관행을 탈피하여 발상을 전환하고 창의의 필요성과 바람직성을 구성원에게 확신시킨다.
+                                            </p>
+                                            <form action="" method="post">
+                                                <div class="iuputSelect">
+                                                    <input type="radio" name="Challenge" value="S">S
+                                                    <input type="radio" name="Challenge" value="A">A
+                                                    <input type="radio" name="Challenge" value="B">B
+                                                    <input type="radio" name="Challenge" value="C">C
+                                                    <input type="radio" name="Challenge" value="D">D
+                                                </div>                                                           
+                                            </form>      
+                                        </div>             
+                                        <div class="wrap">
+                                            <p class="titleName">3. 설득</p>
+                                            <p class="description">
+                                                필요한 자원 확보를 위해 내/외부 관계자의 지지를 얻어내고 협력적 네트워크 관계를 구축한다.
+                                            </p>
+                                            <form action="" method="post">
+                                                <div class="iuputSelect">
+                                                    <input type="radio" name="Challenge" value="S">S
+                                                    <input type="radio" name="Challenge" value="A">A
+                                                    <input type="radio" name="Challenge" value="B">B
+                                                    <input type="radio" name="Challenge" value="C">C
+                                                    <input type="radio" name="Challenge" value="D">D
+                                                </div>                                                           
+                                            </form>      
+                                        </div>     
+                                        <div class="wrap">
+                                            <p class="titleName">4. 추진력</p>
+                                            <p class="description">
+                                                철저한 계획을 바탕으로 정해진 일정에 맞게 추진하며, 추진 동력을 얻기 위한 세부 자원을 적재적소에 배분하여 안정적으로 추진한다.
+                                            </p>
+                                            <form action="" method="post">
+                                                <div class="iuputSelect">
+                                                    <input type="radio" name="Challenge" value="S">S
+                                                    <input type="radio" name="Challenge" value="A">A
+                                                    <input type="radio" name="Challenge" value="B">B
+                                                    <input type="radio" name="Challenge" value="C">C
+                                                    <input type="radio" name="Challenge" value="D">D
+                                                </div>                                                           
+                                            </form>      
+                                        </div>                                                                     
+                                    </div> 
+                                </div>            
+                            </div>           
+                
+                            <div class="dadanRightBtn smallBtnBox">
+                                <button class="smallBtn saveRadiusBtn" type="button">저장</button>
+                            </div>       
+                        </div>
+                    </article>                
+                        
+                </section>
+            </div>       
+        </div>
+    </div>
+</body>
+</html>

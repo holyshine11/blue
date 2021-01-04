@@ -1,0 +1,233 @@
+<!-- myInfo.html (내 정보) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HR SOLUTION | 내정보</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!-- meta name="apple-mobile-web-app-capable" content="yes" /-->
+    <meta name="copyright" content="(주)블루웨이브컨설팅"/>
+    <meta name="reply-to" content="aziulsanko@bluewave.co.kr"/>
+    <meta name="Description" content="HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION"/>
+    <meta name="Keywords" content="인사평가, 인사평가솔루션, HR, HR SOLUTION"/>
+
+    <!--favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="icon" sizes="16x16 32x32" href="">
+
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="static/css/myInfo.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/jquery.dataTables.min.js" defer></script>
+    <script src="static/js/common.js" defer></script>
+    <script src="static/js/myInfo.js" defer></script>
+</head>
+<body>
+
+    <!-- header -->
+    <div id="header">
+        <header>   
+            <div class="frame">
+                <div class="logo">
+                    <a href="index.html"><img src="static/img/logo.png" alt="logo이미지"></a>
+                </div>
+                        
+                <nav class="menuWrap">
+                    <ul class="menu">
+                        <li><a href="myInfo.html">내 정보</a>
+                            <nav>
+                                <a href="myInfo.html">기본 정보</a>
+                            </nav>
+                        </li>   
+                        <li><a href="capacityEva.html">역량 평가</a>
+                            <nav>
+                                <a href="capacityRes.html">역량 평가 결과(A)</a>
+                                <a href="capacityDes.html">역량 평가 설계(A)</a>
+                                <a href="capacityAnalysis.html">역량 평가 분석(A)</a>
+                            </nav>
+                        </li>                    
+                        <li><a href="employeeManagement.html">사원 관리</a>
+                            <nav>
+                                <a href="employeeManagement.html">사원 관리</a>
+                            </nav>
+                        </li>
+                        <li><a href="commonCode.html">시스템 관리</a>
+                            <nav>
+                                <a href="commonCode.html">시스템 관리</a>
+                            </nav>
+                        </li>
+                    </ul>                    
+                </nav>    
+        
+                <div class="menuRight">
+                    <a href="#" id="logIn">Log in</a>
+                </div>                   
+            </div>              
+        </header>
+    </div>
+
+    <!-- bord -->
+    <div class="bordContainer frame">
+        <div id="bord">
+            <!-- bord left -->
+            <aside class="bordLeft">        
+                <p>내 정보</p>  
+                <div class="MenuDepth"><a href="#"> - 기본 정보</a></div>  
+            </aside>     
+        
+            <!-- bord right -->
+            <section class="bordRight">
+                <article class="titleTop">
+                    <h2>기본 정보</h2>
+                    <div class="title">
+                        <p><span class="headMark"></span> 기본 정보</p>
+                        <div class="btnBox">
+                            <button type="button" class="btn cancelBtn">취소</button>
+                            <button type="button" class="btn saveBtn">저장</button>
+                        </div>
+                    </div>   
+                </article>
+            
+                <article id="basicInfo">
+                    <p>"<bold class="starMark"> * </bold>" 는 필수 입력 값입니다.</p>
+                    <div class="tableWrap">
+                        <table title="basicInfo" class="display" id="basicInfoTb" border="1" width="100%">
+                            <colgroup> 
+                                <col width="20%">
+                                <col width="80%">
+                            </colgroup>    
+                        
+                            <tbody> 
+                                <form action="#" method="post">
+                                    <tr class="trBottom">
+                                        <td class="thHeight"><label for="userId">아이디</label></td>
+                                        <td class="thHeight" colspan="2"><input type="text" id="user_id" name="userId" maxlength="10" placeholder="담당자 아이디"></td> 
+                                    </tr>                       
+            
+                                    <tr class="trBottom">                       
+                                        <td class="thHeight"><label for="userName">이름 <bold class="starMark">*</bold></label></td>
+                                        <td class="thHeight" colspan="2"><input type="text" id="user_name" name="userName" maxlength="10" placeholder="담당자 이름">
+                                            <span class="VerboseName active">Verbose name이 출력되는 영역입니다.</span>
+                                        </td>                                           
+                                    </tr>
+            
+                                    <tr class="trBottom">                       
+                                        <td class="thHeight"><label for="userPosition">직급</label></td>
+                                        <td class="thHeight" colspan="2"><input type="text" id="user_position" name="userPosition" maxlength="10" placeholder="담당자 직급"></td>                                           
+                                    </tr>
+            
+                                    <tr class="trBottom">                       
+                                        <td class="thHeight"><label for="userPosition">직책</label></td>
+                                        <td class="thHeight" colspan="2"><input type="text" id="user_position" name="userPosition" maxlength="10" placeholder="담당자 직책"></td>                                           
+                                    </tr>
+            
+                                    <tr class="trBottom">                       
+                                        <td class="thHeight"><label for="userDepartment">부서</label></td>
+                                        <td class="thHeight" colspan="2"><input type="text" id="user_department" name="userDepartment" maxlength="10" placeholder="담당자 부서"></td>                                           
+                                    </tr>
+            
+                                    <tr class="trBottom">                       
+                                        <td class="thHeight"><label for="userDepartment">직무</label></td>
+                                        <td class="optionWrap thHeight" colspan="5">
+                                            <select class="optionBox" name="" id="">
+                                                <option value="직무" selected="selected">직무</option>
+                                                <option value="영업&기획">영업&기획</option>
+                                                <option value="연구개발">연구개발</option>
+                                                <option value="경영지원">경영지원</option>	
+                                                <option value="디자인">디자인</option>	
+                                            </select>
+                                            <select class="optionBox" name="" id="">                                            
+                                                <option value="직무" selected="selected">직책</option>
+                                                <option value="팀원">팀원</option>
+                                                <option value="파트장">파트장</option>
+                                                <option value="팀장">팀장</option>
+                                                <option value="실장">실장</option>	
+                                                <option value="본부장">본부장</option>	
+                                                <option value="사업부장">사업부장</option>	
+                                                <option value="CEO">CEO</option>	
+                                            </select>
+                                            <select class="optionBox" name="" id="">
+                                                <option value="소속" selected="selected">소속</option>
+                                                <option value="기획팀">기획팀</option>
+                                                <option value="개발팀">개발팀</option>
+                                                <option value="퍼블리셔팀">퍼블리셔팀</option>
+                                                <option value="디자인팀">디자인팀</option>	
+                                                <option value="경영팀">경영팀</option>	
+                                            </select>
+                                            <select class="optionBox" name="" id="">
+                                                <option value="직무내용" selected="selected">직무 내용</option>
+                                                <option value="웹기획">웹기획</option>
+                                                <option value="앱개발">앱개발</option>
+                                                <option value="웹개발">웹개발</option>
+                                                <option value="퍼블리싱">퍼블리싱</option>		
+                                                <option value="디자인">디자인</option>	
+                                                <option value="경영">경영</option>	
+                                            </select>
+                                            <select class="optionBox" name="" id="">
+                                                <option value="선택" selected="selected">선택</option>
+                                                <option value="선택1">선택1</option>
+                                                <option value="선택2">선택2</option>
+                                                <option value="선택3">선택3</option>
+                                            </select>
+                                        </td>                                                             
+                                    </tr>                            
+                                </form>                         
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+                
+                <article id="pwCheck">
+                    <div class="title">
+                        <p><span class="headMark"></span> 비밀번호 변경</p>                
+                    </div>   
+                    <div class="tableWrap">
+                        <table title="pwCheck" class="display" id="pwCheckTb" border="1" width="100%">
+                            <colgroup>
+                                <col width="20%">
+                                <col width="80%">
+                            </colgroup>   
+                            <tbody> 
+                                <form action="#" method="post">
+                                    <tr class="trBottom">
+                                        <td class="thHeight"><label for="NowPw">현재 비밀번호</label></td>
+                                        <td class="thHeight" colspan="2"><input type="password" id="pw_now" name="NowPw" maxlength="16" placeholder="**********">
+                                            <span class="VerboseName">Verbose name이 출력되는 영역입니다.</span>
+                                        </td> 
+                                    </tr>                       
+            
+                                    <tr class="trBottom">                       
+                                        <td class="thHeight"><label for="pwUser">비밀번호 <bold class="starMark">*</bold></label></td>
+                                        <td class="thHeight" colspan="2"><input type="password" id="pw_user" name="pwUser" maxlength="16" placeholder="**********">
+                                            <span class="VerboseName">Verbose name이 출력되는 영역입니다.</span>
+                                        </td>                                           
+                                    </tr>
+            
+                                    <tr class="trBottom">                       
+                                        <td class="thHeight"><label for="PwChecked">비밀번호 확인 <bold class="starMark">*</bold></label></td>
+                                        <td class="thHeight" colspan="2"><input type="password" id="pw_checked" name="PwChecked" maxlength="16" placeholder="**********">
+                                            <span class="VerboseName">Verbose name이 출력되는 영역입니다.</span>
+                                        </td>                                           
+                                    </tr>                                   
+                                </form>                         
+                            </tbody>
+                        </table>
+                    </div>
+            
+                    <ul class="pwNotice">
+                        <li>&#42; 비밀번호 변경은 기존 비밀번호와 같이 사용할 수 없습니다.</li>
+                        <li>&#42; 비밀번호 조합은 영어, 숫자, 2종 조합 이상 8자리 이상을 권장합니다.</li>
+                        <li>&#42; 개인신상정보 아이디, 이름 사용을 자제해주세요.</li>
+                        <li>&#42; 부서와 직급/직책 변경은 관리자에게 문의하세요.</li>
+                    </ul>
+                </article>        
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

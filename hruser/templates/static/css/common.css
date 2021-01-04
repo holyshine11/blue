@@ -1,0 +1,490 @@
+/* main css */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans:wght@400;700&display=swap');
+/* common 요소 */
+.frame {
+    width: 1320px;
+    /* padding: 0 23px; */
+    margin: 0 auto;
+}
+
+/* bord */
+#bord {
+    display: flex;
+    width: 100%;    
+}
+
+/* Mark */
+.headMark {
+    display: inline-block;
+    vertical-align: middle;
+    background: #686868;
+    width: 5px;
+    height: 10px;
+    margin-bottom: 4px;
+}
+.starMark {
+    color: #ff0000;
+}
+.VerboseName {
+    color: #ff0000;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    padding : 10px 0 0 20px;
+    background: url(../img/exclamationMark.png) no-repeat 0 80%;
+    background-size: 15px;
+    text-align: left;
+}
+
+/* Btn */
+.btnBox {
+    position: relative;
+    text-align: center;
+}
+.btn {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;    
+    transition: all 0.5s;    
+}
+.btnBox .btn:before {
+    content: ""; 
+    z-index: -1; 
+    position: absolute; 
+    transition: all 1s;
+    left: 0; 
+    top: 0; 
+    width: 0; 
+    height: 100%; 
+    border-bottom-right-radius: 50%; 
+    border-top-right-radius: 50%;
+}
+.btnBox .btn:hover:before {
+    width: 200%;
+}
+
+/* Btn--newBtn */
+.newBtn {
+    border: 1px solid #179AFF;
+    background: #fff;
+}
+.newBtn a {
+    color: #179AFF;
+    display: block;
+}       
+.newBtn:hover{    
+    box-shadow: 150px 0 0 0 #179AFF inset, -150px 0 0 0 #179AFF inset;
+}
+.newBtn:hover a {    
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Btn--cancelBtn */
+.cancelBtn {
+    border: 1px solid #ff0000;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #ff0000;
+    background: #fff;
+}
+.cancelBtn a {
+    color: #ff0000;
+    display: block;
+}       
+.cancelBtn:hover{    
+    border: 1px solid #ff0000;
+    box-shadow: 150px 0 0 0 #ff0000 inset, -150px 0 0 0#ff0000 inset;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Btn--saveBtn */
+.saveBtn {
+    border: 1px solid #179AFF;
+    font-size: 16px;
+    cursor: pointer;
+    color: #179AFF;
+    background: #fff;
+}
+.saveBtn a {
+    color: #179AFF;
+    display: block;
+}       
+.saveBtn:hover{    
+    border: 1px solid #179AFF;
+    box-shadow: 150px 0 0 0 #179AFF inset, -150px 0 0 0#179AFF inset;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Btn--listBtn */
+.listBtn {
+    border: 1px solid rgb(148, 148, 148);
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(148, 148, 148);
+    background: #fff;
+}
+.listBtn a {
+    color: rgb(148, 148, 148);
+    display: block;
+}       
+.listBtn:hover{    
+    border: 1px solid #ccc;
+    box-shadow: 150px 0 0 0 #ccc inset, -150px 0 0 0#ccc inset;
+    color: #fff;
+    font-weight: 600;
+}
+.listBtn:hover a {
+    color: #fff;
+}
+
+/* Btn--plusBtn */
+.plusBtn {
+    border: 1px solid #d32677;
+    font-size: 16px;
+    cursor: pointer;
+    color: #d32677;
+    background:  #fff;
+}
+.plusBtn a {
+    color: #d32677;
+    display: block;
+}       
+.plusBtn:hover{    
+    border: 1px solid #d32677;
+    box-shadow: 150px 0 0 0 #d32677 inset, -150px 0 0 0#d32677 inset;
+    color: #fff;
+    font-weight: 600;
+}
+.plusBtn:hover a {
+    color: #fff;
+}
+
+/* Btn--EmployeeBtn */
+.EmployeeBtn {
+    border: 1px solid #179AFF;
+    font-size: 16px;
+    cursor: pointer;
+    color: #179AFF;
+    background: #fff;
+}
+.EmployeeBtn a {
+    color: #179AFF;
+    display: block;
+}       
+.EmployeeBtn:hover{    
+    border: 1px solid #179AFF;
+    box-shadow: 150px 0 0 0 #179AFF inset, -150px 0 0 0#179AFF inset;
+    color: #fff;
+    font-weight: 600;
+}
+.EmployeeBtn:hover a {
+    color: #fff;
+}
+
+/* Btn--searchBtn */
+.searchBtn {
+    border: 1px solid rgb(70, 70, 70);
+    font-size: 16px;
+    cursor: pointer;
+    color:  rgb(70, 70, 70);
+    background: #fff;
+}
+.searchBtn a {
+    color: #222;
+    display: block;
+}       
+.searchBtn:hover{    
+    border: 1px solid rgb(70, 70, 70);
+    box-shadow: 150px 0 0 0 rgb(70, 70, 70) inset, -150px 0 0 0 rgb(70, 70, 70) inset;
+    color: #fff;
+    font-weight: 600;
+}
+.searchBtn:hover a {
+    color: #fff;
+}
+
+/* smallBtn */
+.smallBtnBox {
+    position: relative;
+    text-align: center;
+}
+.smallBtn {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;    
+    transition: all 0.5s;    
+}
+.smallBtnBox .smallBtn:before {
+    content: ""; 
+    z-index: -1; 
+    position: absolute; 
+    transition: all 1s;
+    left: 0; 
+    top: 0; 
+    width: 0; 
+    height: 100%; 
+    border-bottom-right-radius: 50%; 
+    border-top-right-radius: 50%;
+}
+.smallBtnBox .smallBtn:hover:before {
+    width: 200%;
+}
+
+/* smallBtn--saveRadiusBtn */
+.saveRadiusBtn {
+    border: 1px solid #179AFF;
+    font-size: 16px;
+    cursor: pointer;
+    color: #179AFF;
+    background: #fff;
+    border-radius: 30px;
+}
+.saveRadiusBtn a {
+    color: #179AFF;
+    display: block;
+}       
+.saveRadiusBtn:hover{    
+    border: 1px solid #179AFF;
+    box-shadow: 150px 0 0 0 #179AFF inset, -150px 0 0 0#179AFF inset;
+    color: #fff;
+    font-weight: 600;
+}
+.saveRadiusBtn:hover a {
+    color: #fff;
+}
+
+/* smallBtn--addBtn */
+.addBtn {
+    border: 1px solid #d32677;
+    font-size: 16px;
+    cursor: pointer;
+    color: #d32677;
+    background:  #fff;
+    border-radius: 30px;
+}
+.addBtn a {
+    color: #d32677;
+    display: block;
+}       
+.addBtn:hover{    
+    border: 1px solid #d32677;
+    box-shadow: 150px 0 0 0 #d32677 inset, -150px 0 0 0#d32677 inset;
+    color: #fff;
+    font-weight: 600;
+}
+.addBtn:hover a {
+    color: #fff;
+}
+
+/*  header */
+#header {
+    width: 100vw;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: auto;
+    background: #222;
+    position: fixed;
+    z-index: 2;   
+    margin: 0 auto;   
+}
+header .frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+header ul {
+    display: flex;
+}
+header li {
+    flex: 1;
+}
+header a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+}
+header a+nav {
+    display: none;
+}
+header .logo {}
+header .logo a {
+    line-height: 1;
+    display: block;    
+}
+header .logo a img {
+    line-height: 1;
+    display: block;
+}
+header .menuWrap {
+    width: 700px;
+}
+header .menuWrap .menu {}
+
+header .menuWrap .menu li {
+    width: 175px;
+}
+header .menuWrap .menu li a {
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    color: #fff;
+}
+header .menuWrap .menu li > a {
+    padding: 10px 0 0;
+}
+header .menuWrap .menu > li:hover > a {
+    font-weight: 700;
+}
+header .menuWrap .menu > li > nav> a:hover  {
+    background-color: rgba(0,0,0,.5);
+}
+header .menuRight {}
+header .menuRight > a {
+    display: block;
+    line-height: 75px;  
+    padding: 0 10px;  
+}
+
+/* bord left */
+.myInfoFirst a {
+    padding-left: 33px;
+}
+.employeeManagement a {
+    padding-left: 33px;
+}
+.commonCode a {
+    padding-left: 33px;
+}
+#bord .bordLeft {
+    width: 340px;
+    height: calc(100vh - 75px);
+    -webkit-height: calc(100vh - 75px);
+    -moz-height: calc(100vh - 75px);
+    -o-height: calc(100vh - 75px);
+    padding: 30px 0;
+    border-right: 1px solid #ccc;
+    position: fixed;
+    top: 75px;
+}
+#bord .bordLeft a {
+    display: block;
+    color: #686868;
+    font-weight: 500;
+    line-height: 47px;
+}
+#bord .bordLeft > p {
+    font-weight: 500;
+    line-height: 47px;
+    padding-right: 23px;
+    color: #666;
+}
+#bord .bordLeft .MenuDepth {
+    width: 100%;
+    height: 47px;
+    background: #222;
+}
+#bord .bordLeft .MenuDepth a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    line-height: 47px;
+    padding-left: 33px;
+}
+#bord .bordLeft .capacityEva {}
+#bord .bordLeft .capacityEva a {
+    padding-left: 33px;
+}
+#bord .bordLeft .capacityRes {}
+#bord .bordLeft .capacityRes a {
+    padding-left: 33px;
+}
+#bord .bordLeft .capacityDes {}
+#bord .bordLeft .capacityDes a {
+    padding-left: 33px;
+}
+#bord .bordLeft .capacityAnalysis {}
+#bord .bordLeft .capacityAnalysis a {
+    padding-left: 33px;
+}
+
+/* bordRight */
+#bord .bordRight {
+    width: calc(100% - 340px);
+    -webkit-width: calc(100% - 340px);
+    -moz-width: calc(100% - 340px);
+    -o-width: calc(100% - 340px);
+    padding: 155px 23px 30px;
+    margin-left: 340px;
+}
+#bord .bordRight .contBox {}
+#bord .bordRight .contBox ul {}
+#bord .bordRight .contBox ul li {
+    line-height: 1.5;
+}
+#bord .bordRight .titleTop {}
+#bord .bordRight .titleTop h2 {
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+#bord .bordRight .titleTop .title {}
+#bord .bordRight .titleTop .title p {
+    padding-bottom: 20px;
+    padding-left: 15px;
+    color: #686868;
+    font-size: 18px;
+}
+#bord .bordRight .tableWrap {
+    padding-bottom: 30px;
+}
+#bord .bordRight .tableWrap table {}
+#bord .bordRight .tableWrap table .trHead {}
+#bord .bordRight .tableWrap table .trHead .trBottom {
+}
+#bord .bordRight .tableWrap table .trHead .trBottom .thHeight {
+    padding: 15px 0;
+    text-align: center;
+}
+#bord .bordRight .tableWrap table .trBottom {}
+#bord .bordRight .tableWrap table .trBottom .thHeight {
+    line-height: 1.5;
+    text-align: center;
+    color: #686868;
+    padding: 15px 0;
+}
+#bord .bordRight .tableWrap table .trBottom .thHeight.check {
+    padding: 15px 0;
+    text-align: center;
+    color: #a4a4a4;
+}
+
+/* table */
+td.highlight {
+    font-weight: bold;
+    color: #179AFF;
+}
+#bord .bordRight .tableWrap {
+    padding-bottom: 30px;
+}
+#bord .bordRight .tableWrap table .trHead {}
+#bord .bordRight .tableWrap table .trHead .trBottom .thHeight {
+    padding: 15px 0;
+    text-align: center;
+    color: #222;
+}

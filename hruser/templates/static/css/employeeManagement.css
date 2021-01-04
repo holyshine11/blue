@@ -1,0 +1,69 @@
+/* employeeManagement.css */
+@charset "UTF-8";
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.btnBox {
+    float: right;
+    padding-bottom: 20px;
+}
+.listBtn {
+    margin-right: 10px;
+}
+#bord .bordRight .tableWrap table .trBottom .thHeight.delPoint {
+    cursor: pointer;
+    color: #FF0000;
+    text-decoration: underline;
+}
+#bord .bordRight .tableWrap table .trBottom {
+    border-bottom: 1px solid #ccc;
+}
+#bord .bordRight .tableWrap table .trBottom:last-child {
+    border: none;
+}
+#bord .bordRight .tableWrap table .trBottom .thHeight input {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+#bord #employeeInquiryList {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+/* employeeAdd 팝업 */
+#employeeAdd {
+    padding: 40px;
+}
+#employeeAdd .btnBox {
+    float: inherit;
+    padding: 0;
+}
+#employeeAdd p {
+    padding: 0 0 35px;
+    font-size: 20px;
+}
+#employeeAdd #employeeAddBox {
+    padding: 0 0 25px;
+}
+#employeeAdd .tableWrap {
+    border-top: 1px solid #222; 
+    border-bottom: 1px solid #222; 
+}
+#employeeAdd .tableWrap .trBottom {
+    border-bottom: 1px solid #ccc;
+}
+#employeeAdd .tableWrap .trBottom > td:first-child {
+    text-align: center;
+}
+#employeeAdd .tableWrap .trBottom .thHeight {
+    padding: 10px 0;
+}
+#employeeAdd .tableWrap .trBottom .thHeight input, select {
+    padding: 5px 10px;
+}
+#employeeAdd .tableWrap .trBottom .thHeight .used {
+    width: 81px;
+}

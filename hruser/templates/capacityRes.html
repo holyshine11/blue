@@ -1,0 +1,142 @@
+<!-- capacityRes.html (역량 평가 결과) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HR SOLUTION | 역량 평가 결과</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!-- meta name="apple-mobile-web-app-capable" content="yes" /-->
+    <meta name="copyright" content="(주)블루웨이브컨설팅" />
+    <meta name="reply-to" content="aziulsanko@bluewave.co.kr"/>
+    <meta name="Description" content="HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION"/>
+    <meta name="Keywords" content="인사평가, 인사평가솔루션, HR, HR SOLUTION"/>
+
+    <!--favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="icon" sizes="16x16 32x32" href="">
+
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="static/css/capacityRes.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/jquery.dataTables.min.js" defer></script>
+    <script src="static/js/common.js" defer></script>
+    <script src="static/js/capacityRes.js" defer></script>
+</head>
+<body>
+
+   <!-- header -->
+   <div id="header">
+        <header>   
+            <div class="frame">
+                <div class="logo">
+                    <a href="index.html"><img src="static/img/logo.png" alt="logo이미지"></a>
+                </div>
+                        
+                <nav class="menuWrap">
+                    <ul class="menu">
+                        <li><a href="myInfo.html">내 정보</a>
+                            <nav>
+                                <a href="myInfo.html">기본 정보</a>
+                            </nav>
+                        </li>   
+                        <li><a href="capacityEva.html">역량 평가</a>
+                            <nav>
+                                <a href="capacityRes.html">역량 평가 결과(A)</a>
+                                <a href="capacityDes.html">역량 평가 설계(A)</a>
+                                <a href="capacityAnalysis.html">역량 평가 분석(A)</a>
+                            </nav>
+                        </li>                    
+                        <li><a href="employeeManagement.html">사원 관리</a>
+                            <nav>
+                                <a href="employeeManagement.html">사원 관리</a>
+                            </nav>
+                        </li>
+                        <li><a href="commonCode.html">시스템 관리</a>
+                            <nav>
+                                <a href="commonCode.html">시스템 관리</a>
+                            </nav>
+                        </li>
+                    </ul>                    
+                </nav>    
+        
+                <div class="menuRight">
+                    <a href="#" id="logIn">Log in</a>
+                </div>                   
+            </div>              
+        </header>
+    </div>
+    
+    <div class="bordContainer frame">
+        <div id="bord">
+            <!-- bord left -->
+            <aside class="bordLeft">        
+                <p>역량 평가</p>  
+                <div class="capacityEva"><a href="capacityEva.html"> - 역량 평가</a></div>  
+                <div class="capacityRes MenuDepth"><a href="capacityRes.html"> - 역량 평가 결과(A)</a></div>  
+                <div class="capacityDes"><a href="capacityDes.html"> - 역량 평가 설계(A)</a></div>  
+                <div class="capacityAnalysis"><a href="capacityAnalysis.html">- 역량 평가 분석(A)</a></div>
+            </aside>        
+        
+            <!-- bord right -->
+            <section class="bordRight">
+                <!-- 역량 평가 결과(A) -->
+                <article class="titleTop">
+                    <h2>역량 평가 결과(A)</h2>
+                    <div class="title">
+                        <p><span class="headMark"></span> 역량 평가 결과</p>                
+                    </div>   
+                </article>
+                
+                <article id="capacityResList">
+                    <div class="tableWrap">
+                        <table title="capacityResList" id="capacityResListTb" class="hover row-border stripe" border="1" width="100%">
+                            <colgroup>
+                                <col width="8%">
+                                <col width="27%">
+                                <col width="13%">
+                                <col width="13%">
+                                <col width="13%">
+                                <col width="13%">
+                                <col width="13%">
+                            </colgroup>      
+                                    
+                            <thead class="trHead"> 
+                                <tr class="trBottom">
+                                    <td class="thHeight">no</td>
+                                    <td class="thHeight">제목</td>
+                                    <td class="thHeight">종합 평가</td>
+                                    <td class="thHeight">공통 역량</td>
+                                    <td class="thHeight">직무 역량</td>
+                                    <td class="thHeight">리더십</td>
+                                    <td class="thHeight">전체 평균</td>
+                                </tr>                       
+                            </thead>
+                            <tbody id="capacityResList_table">
+                                <!--
+                                    <tr class="trBottom">
+                                    <td class="thHeight check">01</td>
+                                    <td class="thHeight checking">2020년 하반기 역량 평가</td>
+                                    <td class="thHeight">A
+                                        <div class="score">(8.00)</div>
+                                    </td>
+                                    <td class="thHeight check">A(8.00)</td>
+                                    <td class="thHeight check">A(8.00)</td>
+                                    <td class="thHeight check">A(8.00)</td>
+                                    <td class="thHeight check">A(8.00)</td>
+                                </tr>                                   
+                            -->                               
+                            </tbody>
+                        </table>  
+                    </div>     
+                    
+                </article>    
+            </section>
+        </div>    
+    </div>
+
+</body>
+</html>

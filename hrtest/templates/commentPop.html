@@ -1,0 +1,62 @@
+<!-- commentPop.html (등급 산정 기준 윈도우 팝업) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HR SOLUTION | 부서장 코멘트 윈도우 팝업</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!-- meta name="apple-mobile-web-app-capable" content="yes" /-->
+    <meta name="copyright" content="(주)블루웨이브컨설팅" />
+    <meta name="reply-to" content="aziulsanko@bluewave.co.kr"/>
+    <meta name="Description" content="HR 인사평가 솔루션, 다면평가에서부터 개인별 결과 보고서까지 원스톱 서비스 | HR SOLUTION"/>
+    <meta name="Keywords" content="인사평가, 인사평가솔루션, HR, HR SOLUTION"/>
+
+    <!--favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="icon" sizes="16x16 32x32" href="">
+
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="static/css/capacityRes.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/jquery.dataTables.min.js" defer></script>
+    <script src="static/js/common.js" defer></script>
+    <script src="static/js/capacityRes.js" defer></script>
+</head>
+<body>   
+    <!-- comment PopUp (부서장 코멘트 팝업) -->
+    <div class="commentPopUp">            
+        <h3><span class="headMark"></span> 부서장 코멘트</h3>
+        <div class="tableWrap">
+            <table title="commentPopUp" id="commentPopUpTb" border="1" width="100%">
+                <colgroup> 
+                    <col width="50%">
+                    <col width="50%">
+                </colgroup>
+
+                <thead>
+                    <tr class="trBottom">                                    
+                        <td class="thHeight">기준 등급</td> 
+                        <td class="thHeight">내용</td> 
+                    </tr> 
+                </thead>  
+
+                <tbody id="commentPopUpTb_tb">      
+                    <tr class="trBottom">                                    
+                        <td class="thHeight description">팀에서 늘 믿음직한 존재로 맡은 일을 성실하게 수행하여 감사합니다. 리더로 성장할 수 있도록 모든 면에서 전폭적으로 지원 하겠습니다.</td>
+                        <td class="thHeight description">촉박한 일정에도 늘 긍정적인 마음가짐으로 업무를 진행하는 모습이 매우 보기 좋습니다.</td>
+                    </tr>                                   
+                </tbody>
+            </table>                
+        </div>
+    
+        <div class="btnBox">
+            <button type="button" class="btn cancelBtn">닫기</button>
+        </div>
+    </div>   
+
+</body>
+</html>
